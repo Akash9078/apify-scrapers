@@ -10,7 +10,7 @@ A modern, SEO + AIO + GEO optimized website showcasing 55+ production-ready web 
 
 ## 🌐 Live Demo
 
-**Website:** https://akash9078.github.io/apify-actors/
+**Website:** https://akash9078.github.io/apify-scrapers/
 
 **Apify Profile:** https://apify.com/akash9078
 

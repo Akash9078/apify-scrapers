@@ -216,7 +216,7 @@ Deploy static site
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Apify Actors by Akash",
-  "url": "https://akash9078.github.io/apify-actors",
+  "url": "https://akash9078.github.io/apify-scrapers",
   "logo": "...",
   "sameAs": [
     "https://apify.com/akash9078",
@@ -250,7 +250,7 @@ Deploy static site
 <title>Actor Name | Apify Actors by Akash</title>
 <meta name="description" content="[Actor purpose] - [Key benefit]. Part of 56+ web scraping and automation tools.">
 <meta name="keywords" content="apify, actor, scraper, automation, [category keywords]">
-<link rel="canonical" href="https://akash9078.github.io/apify-actors/actors/[actor-id]/">
+<link rel="canonical" href="https://akash9078.github.io/apify-scrapers/actors/[actor-id]/">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Actor Name | Apify Actors">
