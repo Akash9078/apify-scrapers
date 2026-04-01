@@ -1,96 +1,107 @@
 // js/main.js - Core functionality
 
-// Wait for DOM to be ready
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   initializeApp();
 });
 
 function initializeApp() {
-  // Initialize header scroll effect
   initHeaderScroll();
-  
-  // Initialize mobile menu
   initMobileMenu();
-  
-  // Log ready
-  console.log('🚀 Apify Actors website loaded');
+  updateFooterYear();
+  console.log("Web Scraper Tools website loaded");
 }
 
-// Header scroll effect
 function initHeaderScroll() {
-  const header = document.querySelector('.site-header');
-  let lastScroll = 0;
-  
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+  const header = document.querySelector(".site-header");
+  if (!header) {
+    return;
+  }
+
+  const onScroll = () => {
+    header.classList.toggle("scrolled", window.scrollY > 12);
+  };
+
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+}
+
+function initMobileMenu() {
+  const toggle = document.querySelector(".mobile-menu-toggle");
+  const navList = document.querySelector(".nav-list");
+  const nav = document.querySelector(".main-nav");
+
+  if (!toggle || !navList || !nav) {
+    return;
+  }
+
+  const closeMenu = () => {
+    toggle.setAttribute("aria-expanded", "false");
+    navList.classList.remove("active");
+  };
+
+  toggle.addEventListener("click", () => {
+    const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!isExpanded));
+    navList.classList.toggle("active", !isExpanded);
+  });
+
+  navList.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!nav.contains(event.target)) {
+      closeMenu();
     }
-    
-    lastScroll = currentScroll;
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
   });
 }
 
-// Mobile menu toggle
-function initMobileMenu() {
-  const toggle = document.querySelector('.mobile-menu-toggle');
-  const navList = document.querySelector('.nav-list');
-  
-  if (toggle && navList) {
-    toggle.addEventListener('click', () => {
-      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', !isExpanded);
-      navList.classList.toggle('active');
-    });
-    
-    // Close menu when clicking a link
-    navList.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        toggle.setAttribute('aria-expanded', 'false');
-        navList.classList.remove('active');
-      });
-    });
-    
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!toggle.contains(e.target) && !navList.contains(e.target)) {
-        toggle.setAttribute('aria-expanded', 'false');
-        navList.classList.remove('active');
-      }
-    });
-  }
+function updateFooterYear() {
+  const yearNodes = document.querySelectorAll("[data-current-year]");
+  const updatedNodes = document.querySelectorAll("[data-last-updated]");
+  const now = new Date();
+
+  yearNodes.forEach((node) => {
+    node.textContent = String(now.getFullYear());
+  });
+
+  updatedNodes.forEach((node) => {
+    node.textContent = new Intl.DateTimeFormat("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric"
+    }).format(now);
+  });
 }
 
-// Utility functions
 function debounce(func, wait) {
-  let timeout;
-  return function executedFunction(...args) {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
+  let timeoutId;
+
+  return function debounced(...args) {
+    window.clearTimeout(timeoutId);
+    timeoutId = window.setTimeout(() => {
+      func.apply(this, args);
+    }, wait);
   };
 }
 
 function formatNumber(num) {
-  if (num >= 1000000) {
-    return (num / 1000000).toFixed(1) + 'M';
-  } else if (num >= 1000) {
-    return (num / 1000).toFixed(1) + 'K';
-  }
-  return num.toString();
+  return new Intl.NumberFormat("en-US", {
+    notation: num >= 1000 ? "compact" : "standard",
+    maximumFractionDigits: 1
+  }).format(num);
 }
 
 function formatRating(rating) {
-  return rating ? rating.toFixed(1) : 'N/A';
+  return typeof rating === "number" ? rating.toFixed(1) : "Unrated";
 }
 
-// Export for other modules
-if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== "undefined" && module.exports) {
   module.exports = { debounce, formatNumber, formatRating };
 }

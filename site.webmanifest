@@ -1,0 +1,17 @@
+{
+  "name": "Web Scraper Tools",
+  "short_name": "Scraper Tools",
+  "description": "A curated showcase of Apify Actors for scraping, AI automation, and data workflows.",
+  "start_url": "/apify-actors/",
+  "display": "standalone",
+  "background_color": "#f7f1e8",
+  "theme_color": "#f7f1e8",
+  "icons": [
+    {
+      "src": "assets/images/og-cover.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

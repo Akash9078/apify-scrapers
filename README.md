@@ -1,15 +1,16 @@
-# 🚀 Apify Actors Showcase
+# 🚀 Web Scraping Tools | Apify Actors Showcase
 
-A modern, SEO-optimized website showcasing 56+ Apify Actors for web scraping and automation. Built with HTML, CSS, and vanilla JavaScript.
+A modern, SEO + AIO + GEO optimized website showcasing 55+ production-ready web scraping tools and data extraction APIs. Built with HTML, CSS, and vanilla JavaScript. Optimized for traditional search (SEO), AI Overviews (AIO), and Generative Engine Optimization (GEO).
 
 ![Website](https://img.shields.io/badge/Website-Live-brightgreen)
-![Actors](https://img.shields.io/badge/Actors-56-orange)
+![Actors](https://img.shields.io/badge/Actors-55+-orange)
 ![Users](https://img.shields.io/badge/Users-1.5K+-blue)
+![SEO](https://img.shields.io/badge/SEO-AIO%20GEO-ff6b35)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## 🌐 Live Demo
 
-**Website:** https://akash9078.github.io/apify-scrapers/
+**Website:** https://akash9078.github.io/apify-actors/
 
 **Apify Profile:** https://apify.com/akash9078
 

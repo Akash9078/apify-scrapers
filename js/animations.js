@@ -72,21 +72,24 @@ function animateCounters() {
   });
 }
 
-// Add CSS animation styles
-const style = document.createElement('style');
-style.textContent = `
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  
-  .fade-in-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-document.head.appendChild(style);
+// Add CSS animation styles (only if not already added)
+if (!document.getElementById('apify-animations-style')) {
+  const animStyle = document.createElement('style');
+  animStyle.id = 'apify-animations-style';
+  animStyle.textContent = `
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    
+    .fade-in-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  `;
+  document.head.appendChild(animStyle);
+}
 
 // Export for module usage
 if (typeof module !== 'undefined' && module.exports) {

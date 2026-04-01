@@ -3,261 +3,226 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Categories | Apify Actors by Akash</title>
-  <meta name="description" content="Browse 9 categories of Apify Actors including YouTube, AI, Maps, SEO, E-commerce, Crypto, Media, Social Media, and Developer Tools.">
-  <meta name="keywords" content="apify categories, web scraping categories, ai tools, youtube scrapers">
+<title>Web Scraping Categories | YouTube, SERP, Maps & E-Commerce Data Extraction</title>
+<meta name="description" content="Browse web scraping tools by category: YouTube transcript extractors, SERP scrapers, Google Maps data extraction, e-commerce product scrapers, AI automation, and developer tools.">
+<meta name="keywords" content="web scraping categories, YouTube scraper, SERP scraper, Google Maps scraper, e-commerce data extraction, web scraping tools, data extraction API, product scraper, transcript extractor">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="theme-color" content="#f7f1e8">
   <link rel="canonical" href="https://akash9078.github.io/apify-actors/categories.html">
-  
-  <!-- Open Graph -->
+
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Categories | Web Scraper Tools">
+  <meta property="og:description" content="Understand the actor catalog by category, workflow, and sample use case.">
   <meta property="og:url" content="https://akash9078.github.io/apify-actors/categories.html">
-  <meta property="og:title" content="Categories | Apify Actors by Akash">
-  <meta property="og:description" content="Browse 9 categories of Apify Actors for web scraping and automation.">
-  
-  <!-- Fonts -->
+  <meta property="og:image" content="https://akash9078.github.io/apify-actors/assets/images/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Categories | Web Scraper Tools">
+  <meta name="twitter:description" content="Browse the actor library by task-oriented categories.">
+  <meta name="twitter:image" content="https://akash9078.github.io/apify-actors/assets/images/og-cover.svg">
+
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="apple-touch-icon" href="assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
-  
-  <style>
-    .page-hero {
-      padding: calc(var(--space-8) + 70px) 0 var(--space-6);
-      background: linear-gradient(135deg, var(--color-bg-alt) 0%, white 100%);
-      text-align: center;
-    }
-    
-    .page-title {
-      font-size: var(--font-size-4xl);
-      margin-bottom: var(--space-3);
-    }
-    
-    .page-description {
-      font-size: var(--font-size-lg);
-      color: var(--color-text-muted);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    
-    .categories-detailed {
-      padding: var(--space-6) 0 var(--space-8);
-      background: white;
-    }
-    
-    .category-detail-card {
-      background: white;
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-md);
-      padding: var(--space-5);
-      margin-bottom: var(--space-5);
-      border: 2px solid var(--color-border);
-      transition: all var(--transition-base);
-    }
-    
-    .category-detail-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-lg);
-      border-color: var(--color-primary);
-    }
-    
-    .category-detail-header {
-      display: flex;
-      align-items: center;
-      gap: var(--space-3);
-      margin-bottom: var(--space-4);
-      padding-bottom: var(--space-4);
-      border-bottom: 2px solid var(--color-border);
-    }
-    
-    .category-detail-icon {
-      font-size: 2.5rem;
-    }
-    
-    .category-detail-info h2 {
-      font-size: var(--font-size-2xl);
-      margin-bottom: var(--space-1);
-    }
-    
-    .category-detail-count {
-      color: var(--color-text-muted);
-      font-size: var(--font-size-sm);
-    }
-    
-    .category-actors-preview {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: var(--space-3);
-    }
-    
-    .category-actor-item {
-      display: flex;
-      align-items: center;
-      gap: var(--space-3);
-      padding: var(--space-3);
-      background: var(--color-bg-alt);
-      border-radius: var(--radius-md);
-      text-decoration: none;
-      color: var(--color-text);
-      transition: all var(--transition-fast);
-    }
-    
-    .category-actor-item:hover {
-      background: var(--color-primary-light);
-      color: white;
-      transform: translateX(4px);
-      text-decoration: none;
-    }
-    
-    .category-actor-icon {
-      font-size: 1.5rem;
-    }
-    
-    .category-actor-name {
-      font-weight: 600;
-      flex: 1;
-    }
-    
-    .category-actor-arrow {
-      opacity: 0;
-      transition: opacity var(--transition-fast);
-    }
-    
-    .category-actor-item:hover .category-actor-arrow {
-      opacity: 1;
-    }
-    
-    .view-all-link {
-      display: inline-flex;
-      align-items: center;
-      gap: var(--space-2);
-      margin-top: var(--space-4);
-      color: var(--color-primary);
-      font-weight: 600;
-      text-decoration: none;
-    }
-    
-    .view-all-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "Actor Categories",
+        "url": "https://akash9078.github.io/apify-actors/categories.html",
+        "description": "Task-oriented categories for browsing Apify Actors by workflow and data type."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://akash9078.github.io/apify-actors/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Categories",
+            "item": "https://akash9078.github.io/apify-actors/categories.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  
+
   <header class="site-header" role="banner">
     <div class="container">
       <div class="header-content">
-        <a href="index.html" class="logo">
-          <span class="logo-icon">🚀</span>
-          <span class="logo-text">Apify Actors</span>
+        <a href="index.html" class="logo" aria-label="Web Scraper Tools home">
+          <span class="logo-icon" aria-hidden="true">A</span>
+          <span class="logo-text">Web Scraper Tools</span>
         </a>
-        <nav class="main-nav" role="navigation" aria-label="Main navigation">
-          <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="mobile-menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="categories.html" class="nav-link active">Categories</a></li>
-            <li><a href="actors.html" class="nav-link">All Actors</a></li>
-            <li><a href="stats.html" class="nav-link">Stats</a></li>
-            <li><a href="https://apify.com/akash9078" class="nav-link nav-link--external" target="_blank" rel="noopener">Apify Profile →</a></li>
-          </ul>
+<ul class="nav-list">
+<li><a href="categories.html" class="nav-link active">Categories</a></li>
+<li><a href="actors.html" class="nav-link">All Actors</a></li>
+<li><a href="index.html#stats" class="nav-link">Stats</a></li>
+<li><a href="https://apify.com/akash9078" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">Apify Profile</a></li>
+</ul>
         </nav>
       </div>
     </div>
   </header>
-  
-  <main id="main-content" role="main">
-    <section class="page-hero">
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="categories-title">
       <div class="container">
-        <h1 class="page-title">Categories</h1>
-        <p class="page-description">
-          Explore 9 categories of powerful web scraping and automation tools designed for different use cases.
-        </p>
+        <span class="eyebrow page-kicker">Category View</span>
+        <h1 class="page-title" id="categories-title">Browse the actor library by workflow category.</h1>
+        <p class="page-description">This page explains what each category is for, which kinds of tasks it supports, and which actors lead each cluster. That makes the collection easier to understand for visitors, search engines, and AI assistants.</p>
       </div>
     </section>
-    
+
     <section class="categories-detailed" aria-labelledby="categories-detail-heading">
       <div class="container">
-        <h2 id="categories-detail-heading" class="sr-only">Browse Categories</h2>
-        <div id="categories-detailed-grid">
-          <!-- Categories injected via JS -->
+        <div class="section-header">
+          <span class="eyebrow">Task-Oriented Browsing</span>
+          <h2 id="categories-detail-heading" class="section-title">Each category maps to a real operating need.</h2>
+          <p class="section-lead">Categories are described with practical language so someone searching for “YouTube transcript scraper,” “Google Maps leads,” or “AI image utility” can understand where to start immediately.</p>
         </div>
+        <div class="page-grid" id="categories-detailed-grid"></div>
       </div>
     </section>
   </main>
-  
+
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <span class="footer-logo">🚀 Apify Actors</span>
-          <p class="footer-tagline">Built with ❤️ by Akash Kumar Naik</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="categories.html">Categories</a></li>
-              <li><a href="actors.html">All Actors</a></li>
-              <li><a href="stats.html">Stats</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Connect</h3>
-            <ul>
-              <li><a href="https://apify.com/akash9078" target="_blank" rel="noopener">Apify Profile</a></li>
-              <li><a href="https://github.com/akash9078" target="_blank" rel="noopener">GitHub</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 Akash Kumar Naik. All rights reserved.</p>
-        <p class="footer-meta">Last updated: March 31, 2025</p>
-      </div>
+<div class="footer-content">
+<div class="footer-brand">
+<span class="footer-logo">Web Scraping Tools</span>
+<p class="footer-tagline">Production-ready web scraping tools, data extraction APIs, and automation workflows built on Apify.</p>
+<p class="footer-note">Optimized for SEO, AI Overviews (AIO), and Generative Engine Optimization (GEO).</p>
+</div>
+<div class="footer-links">
+<div class="footer-section">
+<h3>Web Scraping Categories</h3>
+<ul>
+<li><a href="categories.html">YouTube Transcript Extractors</a></li>
+<li><a href="categories.html">SERP Scrapers & SEO Tools</a></li>
+<li><a href="categories.html">Google Maps Data Extraction</a></li>
+<li><a href="categories.html">E-Commerce Product Scrapers</a></li>
+<li><a href="actors.html">All Web Scraping Tools</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>Connect & About</h3>
+<ul>
+<li><a href="https://apify.com/akash9078" target="_blank" rel="noopener noreferrer">Apify Store Profile</a></li>
+<li><a href="https://github.com/akash9078" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+<li><a href="index.html#what-is">About These Tools</a></li>
+<li><a href="index.html#faq-heading">FAQ & Help</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span data-current-year>2026</span> Akash Kumar Naik — Web Scraping Developer. All rights reserved.</p>
+<p>Last updated: <span data-last-updated>April 1, 2026</span> | Optimized for AI & Generative Search Discovery</p>
+</div>
     </div>
   </footer>
-  
+
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
   <script>
-    // Render detailed categories
-    document.addEventListener('DOMContentLoaded', () => {
-      const container = document.getElementById('categories-detailed-grid');
-      
-      container.innerHTML = categories.map(category => {
-        const categoryActors = actors.filter(actor => actor.categoryId === category.id).slice(0, 4);
-        
+    const categoryNarratives = {
+      youtube: {
+        summary: "Use these actors to pull transcripts, channel inventories, playlists, and search results from YouTube for research, content analysis, or repurposing.",
+        idealFor: "Content strategists, media researchers, agencies, and product teams that need structured video data."
+      },
+      ai: {
+        summary: "This category contains AI utilities for text, images, code understanding, and reasoning-powered content workflows.",
+        idealFor: "Builders creating AI products, operators automating knowledge work, and teams testing AI-enabled services."
+      },
+      maps: {
+        summary: "Maps actors focus on local business discovery, lead generation, and place data collection with structured business details.",
+        idealFor: "Sales teams, growth operators, and analysts researching local markets."
+      },
+      seo: {
+        summary: "SEO actors help gather ranking signals, trends, keyword ideas, news coverage, and web search results at scale.",
+        idealFor: "SEO teams, editors, agencies, and market researchers."
+      },
+      ecommerce: {
+        summary: "These tools collect pricing, catalog, supplier, and marketplace data for sourcing and competitive intelligence.",
+        idealFor: "Marketplace operators, e-commerce analysts, and sourcing teams."
+      },
+      crypto: {
+        summary: "Finance and crypto actors surface prices, listings, exchange information, and financial indicators for monitoring and research.",
+        idealFor: "Analysts, traders, and founders building finance-adjacent products."
+      },
+      media: {
+        summary: "Media actors convert, extract, enhance, or capture assets across image, audio, PDF, screenshot, and text-to-speech workflows.",
+        idealFor: "Operations, marketing, content production, and internal tooling teams."
+      },
+      social: {
+        summary: "Social actors highlight trending topics, platform signals, and ad intelligence from fast-moving social channels.",
+        idealFor: "Brand researchers, marketers, and social intelligence teams."
+      },
+      dev: {
+        summary: "Developer tools and utility APIs support narrow but useful use cases that plug into apps, dashboards, agents, and automations.",
+        idealFor: "Developers, indie hackers, and teams building internal tools."
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("categories-detailed-grid");
+      if (!container) {
+        return;
+      }
+
+      container.innerHTML = categories.map((category) => {
+        const narrative = categoryNarratives[category.id] || {
+          summary: "A practical category for specialized automation workflows.",
+          idealFor: "Teams looking for structured web data and repeatable tasks."
+        };
+        const categoryActors = actors.filter((actor) => actor.categoryId === category.id).slice(0, 4);
+
         return `
-          <div class="category-detail-card">
+          <article class="category-detail-card">
             <div class="category-detail-header">
-              <span class="category-detail-icon">${category.icon}</span>
+              <span class="category-card-icon category-card-icon--${category.id}" aria-hidden="true">${category.icon}</span>
               <div class="category-detail-info">
                 <h2>${category.name}</h2>
-                <span class="category-detail-count">${category.count} actors</span>
+                <span class="category-detail-count">${category.count} actors in this category</span>
               </div>
             </div>
+            <p class="category-detail-copy">${narrative.summary}</p>
+            <p class="category-detail-copy"><strong>Best for:</strong> ${narrative.idealFor}</p>
             <div class="category-actors-preview">
-              ${categoryActors.map(actor => `
-                <a href="${actor.apifyUrl}" class="category-actor-item" target="_blank" rel="noopener">
-                  <span class="category-actor-icon">${actor.icon}</span>
+              ${categoryActors.map((actor) => `
+                <a href="${actor.apifyUrl}" class="category-actor-item" target="_blank" rel="noopener noreferrer">
+                  <span aria-hidden="true">${actor.icon}</span>
                   <span class="category-actor-name">${actor.name}</span>
-                  <span class="category-actor-arrow">→</span>
+                  <span class="category-actor-arrow" aria-hidden="true">></span>
                 </a>
-              `).join('')}
+              `).join("")}
             </div>
-            <a href="actors.html?category=${category.id}" class="view-all-link">
-              View all ${category.name} →
-            </a>
-          </div>
+            <a href="actors.html?category=${category.id}" class="view-all-link">View all ${category.name} actors</a>
+          </article>
         `;
-      }).join('');
+      }).join("");
     });
   </script>
 </body>

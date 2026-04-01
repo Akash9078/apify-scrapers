@@ -3,224 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Actors | Apify Actors by Akash</title>
-  <meta name="description" content="Browse all 56 Apify Actors. Search, filter, and discover web scraping and automation tools for YouTube, AI, Maps, SEO, E-commerce, and more.">
-  <meta name="keywords" content="apify actors, web scraping tools, automation, all actors, search">
+<title>All Web Scraping Tools | YouTube Transcript, SERP & Maps Data Extraction</title>
+<meta name="description" content="Browse 56+ web scraping tools and data extraction APIs. Filter by category: YouTube transcript extractors, SERP scrapers, Google Maps scrapers, e-commerce product scrapers, and AI automation tools.">
+<meta name="keywords" content="web scraping tools, YouTube transcript extractor, SERP scraper, Google Maps scraper, data extraction API, e-commerce scraper, Apify actors, web automation, product scraper, transcript extraction API">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="theme-color" content="#f7f1e8">
   <link rel="canonical" href="https://akash9078.github.io/apify-actors/actors.html">
-  
-  <!-- Open Graph -->
+
   <meta property="og:type" content="website">
+  <meta property="og:title" content="All Actors | Web Scraper Tools">
+  <meta property="og:description" content="Browse the full actor library for scraping, APIs, SEO workflows, AI tools, media conversion, and data extraction.">
   <meta property="og:url" content="https://akash9078.github.io/apify-actors/actors.html">
-  <meta property="og:title" content="All Actors | Apify Actors by Akash">
-  <meta property="og:description" content="Browse all 56 web scraping and automation tools.">
-  
-  <!-- Fonts -->
+  <meta property="og:image" content="https://akash9078.github.io/apify-actors/assets/images/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="All Actors | Web Scraper Tools">
+  <meta name="twitter:description" content="Search the complete actor catalog by workflow, category, and popularity.">
+  <meta name="twitter:image" content="https://akash9078.github.io/apify-actors/assets/images/og-cover.svg">
+
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="apple-touch-icon" href="assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
-  
-  <style>
-    .page-hero {
-      padding: calc(var(--space-8) + 70px) 0 var(--space-6);
-      background: linear-gradient(135deg, var(--color-bg-alt) 0%, white 100%);
-      text-align: center;
-    }
-    
-    .page-title {
-      font-size: var(--font-size-4xl);
-      margin-bottom: var(--space-3);
-    }
-    
-    .page-description {
-      font-size: var(--font-size-lg);
-      color: var(--color-text-muted);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    
-    .actors-full-section {
-      padding: var(--space-6) 0 var(--space-8);
-      background: var(--color-bg-alt);
-    }
-    
-    .actors-grid-full {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: var(--space-4);
-    }
-    
-    .search-filter-bar-enhanced {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-4);
-      margin-bottom: var(--space-5);
-      padding: var(--space-5);
-      background: white;
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-md);
-      position: sticky;
-      top: 80px;
-      z-index: 100;
-    }
-    
-    .search-box-enhanced {
-      flex: 2;
-      min-width: 300px;
-    }
-    
-    .search-input-enhanced {
-      width: 100%;
-      padding: var(--space-3) var(--space-5);
-      border: 2px solid var(--color-border);
-      border-radius: var(--radius-full);
-      font-size: var(--font-size-lg);
-      transition: all var(--transition-fast);
-    }
-    
-    .search-input-enhanced:focus {
-      border-color: var(--color-primary);
-      box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.1);
-      outline: none;
-    }
-    
-    .filter-group-enhanced {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-2);
-      min-width: 180px;
-    }
-    
-    .filter-label-enhanced {
-      font-size: var(--font-size-sm);
-      font-weight: 600;
-      color: var(--color-text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    
-    .filter-select-enhanced {
-      padding: var(--space-3) var(--space-4);
-      border: 2px solid var(--color-border);
-      border-radius: var(--radius-md);
-      background: white;
-      font-size: var(--font-size-base);
-      cursor: pointer;
-      min-width: 180px;
-    }
-    
-    .filter-select-enhanced:focus {
-      border-color: var(--color-primary);
-      outline: none;
-    }
-    
-    .results-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: var(--space-4);
-      flex-wrap: wrap;
-      gap: var(--space-3);
-    }
-    
-    .results-count-enhanced {
-      font-size: var(--font-size-lg);
-      color: var(--color-text-muted);
-    }
-    
-    .results-count-enhanced strong {
-      color: var(--color-primary);
-      font-weight: 700;
-    }
-    
-    .sort-options {
-      display: flex;
-      gap: var(--space-2);
-    }
-    
-    .sort-btn {
-      padding: var(--space-2) var(--space-3);
-      background: white;
-      border: 2px solid var(--color-border);
-      border-radius: var(--radius-md);
-      font-size: var(--font-size-sm);
-      cursor: pointer;
-      transition: all var(--transition-fast);
-    }
-    
-    .sort-btn:hover,
-    .sort-btn.active {
-      background: var(--color-primary);
-      color: white;
-      border-color: var(--color-primary);
-    }
-  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "All Actors",
+        "url": "https://akash9078.github.io/apify-actors/actors.html",
+        "description": "The full searchable list of Apify Actors built by Akash Kumar Naik.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Web Scraper Tools",
+          "url": "https://akash9078.github.io/apify-actors/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://akash9078.github.io/apify-actors/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "All Actors",
+            "item": "https://akash9078.github.io/apify-actors/actors.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  
+
   <header class="site-header" role="banner">
     <div class="container">
       <div class="header-content">
-        <a href="index.html" class="logo">
-          <span class="logo-icon">🚀</span>
-          <span class="logo-text">Apify Actors</span>
+        <a href="index.html" class="logo" aria-label="Web Scraper Tools home">
+          <span class="logo-icon" aria-hidden="true">A</span>
+          <span class="logo-text">Web Scraper Tools</span>
         </a>
-        <nav class="main-nav" role="navigation" aria-label="Main navigation">
-          <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="mobile-menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="categories.html" class="nav-link">Categories</a></li>
-            <li><a href="actors.html" class="nav-link active">All Actors</a></li>
-            <li><a href="stats.html" class="nav-link">Stats</a></li>
-            <li><a href="https://apify.com/akash9078" class="nav-link nav-link--external" target="_blank" rel="noopener">Apify Profile →</a></li>
-          </ul>
+<ul class="nav-list">
+<li><a href="categories.html" class="nav-link">Categories</a></li>
+<li><a href="actors.html" class="nav-link active">All Actors</a></li>
+<li><a href="index.html#stats" class="nav-link">Stats</a></li>
+<li><a href="https://apify.com/akash9078" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">Apify Profile</a></li>
+</ul>
         </nav>
       </div>
     </div>
   </header>
-  
-  <main id="main-content" role="main">
-    <section class="page-hero">
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="actors-title">
       <div class="container">
+        <span class="eyebrow page-kicker">Collection Page</span>
         <h1 class="page-title" id="actors-title">All Actors</h1>
-        <p class="page-description" id="actors-description">
-          Browse all 56 web scraping and automation tools. Search, filter, and find the perfect actor for your needs.
-        </p>
+        <p class="page-description" id="actors-description">Search the full actor library by task, compare categories, and quickly jump into the exact Apify workflow you need.</p>
+        <ul class="page-highlight-list" aria-label="Collection highlights">
+          <li class="page-highlight-item">Search by feature, use case, or category</li>
+          <li class="page-highlight-item">URL state updates as filters change</li>
+          <li class="page-highlight-item">Better crawlability for filtered discovery</li>
+        </ul>
       </div>
     </section>
-    
+
     <section class="actors-full-section" aria-labelledby="actors-section-heading">
       <div class="container">
-        <h2 id="actors-section-heading" class="sr-only">All Actors Grid</h2>
-        
-        <!-- Search & Filter Bar -->
-        <div class="search-filter-bar-enhanced">
+        <div class="section-header">
+          <span class="eyebrow">Search Interface</span>
+          <h2 id="actors-section-heading" class="section-title">Filter for the exact outcome you want.</h2>
+          <p class="section-lead" id="results-summary">This page is useful for both direct visitors and AI systems because the search state, category focus, and actor results are all represented clearly.</p>
+        </div>
+
+        <div class="search-filter-bar-enhanced" role="search">
           <div class="search-box-enhanced">
-            <label for="actor-search" class="sr-only">Search actors</label>
-            <input 
-              type="search" 
-              id="actor-search" 
-              class="search-input-enhanced" 
-              placeholder="🔍 Search actors by name, description, or category..."
-              autocomplete="off"
-            >
+            <label for="actor-search" class="filter-label-enhanced">Search</label>
+            <input type="search" id="actor-search" name="actor-search" class="search-input-enhanced" placeholder="Search actors, workflows, or features…" autocomplete="off">
           </div>
           <div class="filter-group-enhanced">
             <label for="category-filter" class="filter-label-enhanced">Category</label>
-            <select id="category-filter" class="filter-select-enhanced">
+            <select id="category-filter" name="category-filter" class="filter-select-enhanced">
               <option value="">All Categories</option>
             </select>
           </div>
           <div class="filter-group-enhanced">
             <label for="sort-filter" class="filter-label-enhanced">Sort By</label>
-            <select id="sort-filter" class="filter-select-enhanced">
+            <select id="sort-filter" name="sort-filter" class="filter-select-enhanced">
               <option value="popular">Most Popular</option>
               <option value="rating">Highest Rated</option>
               <option value="name">Name (A-Z)</option>
@@ -228,80 +134,62 @@
             </select>
           </div>
         </div>
-        
-        <!-- Active Filters -->
-        <div class="active-filters" id="active-filters" style="display: none;">
-          <span class="filters-label">Active Filters:</span>
+
+        <div class="active-filters is-hidden" id="active-filters" aria-live="polite">
+          <span class="filters-label">Active Filters</span>
           <div class="filter-pills" id="filter-pills"></div>
-          <button class="clear-filters" id="clear-filters">Clear All</button>
+          <button class="clear-filters" id="clear-filters" type="button">Clear All</button>
         </div>
-        
-        <!-- Results Header -->
+
         <div class="results-header">
-          <span class="results-count-enhanced" id="results-count">
-            Showing <strong>56</strong> actors
-          </span>
+          <span class="results-count-enhanced" id="results-count">Showing <strong>56</strong> actors</span>
         </div>
-        
-        <!-- Actors Grid -->
-        <div class="actors-grid-full" id="actors-grid">
-          <!-- Actor cards injected via JS -->
-        </div>
+
+        <div class="actors-grid-full" id="actors-grid"></div>
       </div>
     </section>
   </main>
-  
+
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <span class="footer-logo">🚀 Apify Actors</span>
-          <p class="footer-tagline">Built with ❤️ by Akash Kumar Naik</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="categories.html">Categories</a></li>
-              <li><a href="actors.html">All Actors</a></li>
-              <li><a href="stats.html">Stats</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Connect</h3>
-            <ul>
-              <li><a href="https://apify.com/akash9078" target="_blank" rel="noopener">Apify Profile</a></li>
-              <li><a href="https://github.com/akash9078" target="_blank" rel="noopener">GitHub</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 Akash Kumar Naik. All rights reserved.</p>
-        <p class="footer-meta">Last updated: March 31, 2025</p>
-      </div>
+<div class="footer-content">
+<div class="footer-brand">
+<span class="footer-logo">Web Scraping Tools</span>
+<p class="footer-tagline">Production-ready web scraping tools, data extraction APIs, and automation workflows built on Apify.</p>
+<p class="footer-note">Optimized for SEO, AI Overviews (AIO), and Generative Engine Optimization (GEO).</p>
+</div>
+<div class="footer-links">
+<div class="footer-section">
+<h3>Web Scraping Categories</h3>
+<ul>
+<li><a href="categories.html">YouTube Transcript Extractors</a></li>
+<li><a href="categories.html">SERP Scrapers & SEO Tools</a></li>
+<li><a href="categories.html">Google Maps Data Extraction</a></li>
+<li><a href="categories.html">E-Commerce Product Scrapers</a></li>
+<li><a href="actors.html">All Web Scraping Tools</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>Connect & About</h3>
+<ul>
+<li><a href="https://apify.com/akash9078" target="_blank" rel="noopener noreferrer">Apify Store Profile</a></li>
+<li><a href="https://github.com/akash9078" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+<li><a href="index.html#what-is">About These Tools</a></li>
+<li><a href="index.html#faq-heading">FAQ & Help</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span data-current-year>2026</span> Akash Kumar Naik — Web Scraping Developer. All rights reserved.</p>
+<p>Last updated: <span data-last-updated>April 1, 2026</span> | Optimized for AI & Generative Search Discovery</p>
+</div>
     </div>
   </footer>
-  
+
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
   <script src="js/search-filter.js"></script>
   <script src="js/ui-components.js"></script>
-  <script>
-    // Initialize with URL params
-    document.addEventListener('DOMContentLoaded', () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const categoryId = urlParams.get('category');
-      
-      if (categoryId) {
-        const categorySelect = document.getElementById('category-filter');
-        if (categorySelect) {
-          categorySelect.value = categoryId;
-          categorySelect.dispatchEvent(new Event('change'));
-        }
-      }
-    });
-  </script>
 </body>
 </html>

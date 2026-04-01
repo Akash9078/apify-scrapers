@@ -769,25 +769,9 @@ const actors = [
     useCases: ["Ad research", "Competitor analysis"]
   },
 
-  // Developer Tools & APIs (9)
-  {
-    id: "wolfram-alpha-api",
-    name: "Wolfram Alpha API",
-    category: "Developer Tools & APIs",
-    categoryId: "dev",
-    description: "Computational knowledge engine for math, science, facts",
-    shortDescription: "Wolfram Alpha computational API",
-    users: 2,
-    rating: null,
-    totalRuns: 50,
-    apifyUrl: "https://apify.com/akash9078/wolfram-alpha-api",
-    icon: "🔧",
-    color: "#6366F1",
-    features: ["Computational", "Math", "Science", "Facts"],
-    useCases: ["Calculations", "Knowledge"]
-  },
-  {
-    id: "airbnb-destinations-scraper",
+// Developer Tools & APIs (8)
+{
+id: "airbnb-destinations-scraper",
     name: "Airbnb Destinations Scraper",
     category: "Developer Tools & APIs",
     categoryId: "dev",
