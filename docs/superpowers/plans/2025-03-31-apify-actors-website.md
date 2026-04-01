@@ -141,21 +141,21 @@ if (typeof module !== 'undefined' && module.exports) {
   <meta name="description" content="Discover 56+ powerful Apify Actors for web scraping, AI automation, data extraction, and more. Built by Akash Kumar Naik. Free and easy to use.">
   <meta name="keywords" content="apify, web scraping, automation, actors, youtube scraper, ai tools, data extraction">
   <meta name="author" content="Akash Kumar Naik">
-  <link rel="canonical" href="https://akash9078.github.io/apify-scrapers/">
+  <link rel="canonical" href="https://scrapers.yesintelligent.com/">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://akash9078.github.io/apify-scrapers/">
+  <meta property="og:url" content="https://scrapers.yesintelligent.com/">
   <meta property="og:title" content="Apify Actors by Akash | 56+ Web Scraping & Automation Tools">
   <meta property="og:description" content="Discover 56+ powerful Apify Actors for web scraping, AI automation, data extraction, and more.">
-  <meta property="og:image" content="https://akash9078.github.io/apify-scrapers/assets/og-image.jpg">
+  <meta property="og:image" content="https://scrapers.yesintelligent.com/assets/og-image.jpg">
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://akash9078.github.io/apify-scrapers/">
+  <meta property="twitter:url" content="https://scrapers.yesintelligent.com/">
   <meta property="twitter:title" content="Apify Actors by Akash | 56+ Web Scraping & Automation Tools">
   <meta property="twitter:description" content="Discover 56+ powerful Apify Actors for web scraping, AI automation, data extraction, and more.">
-  <meta property="twitter:image" content="https://akash9078.github.io/apify-scrapers/assets/og-image.jpg">
+  <meta property="twitter:image" content="https://scrapers.yesintelligent.com/assets/og-image.jpg">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
@@ -176,7 +176,7 @@ if (typeof module !== 'undefined' && module.exports) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Apify Actors by Akash",
-    "url": "https://akash9078.github.io/apify-scrapers/",
+    "url": "https://scrapers.yesintelligent.com/",
     "description": "56+ web scraping and automation tools for developers",
     "author": {
       "@type": "Person",
@@ -2258,7 +2258,7 @@ document.head.appendChild(style);
 ```
 User-agent: *
 Allow: /
-Sitemap: https://akash9078.github.io/apify-scrapers/sitemap.xml
+Sitemap: https://scrapers.yesintelligent.com/sitemap.xml
 ```
 
 - [ ] **Step 3: Create sitemap.xml**
@@ -2266,7 +2266,7 @@ Sitemap: https://akash9078.github.io/apify-scrapers/sitemap.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://akash9078.github.io/apify-scrapers/</loc>
+    <loc>https://scrapers.yesintelligent.com/</loc>
     <lastmod>2025-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>

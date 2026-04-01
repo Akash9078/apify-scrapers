@@ -1,0 +1,23 @@
+{
+  "name": "web-scraping-tools",
+  "version": "1.0.0",
+  "description": "Web Scraping Tools | 55+ Apify Actors for Data Extraction, YouTube Transcripts, SERP Scraping & E-commerce Intelligence",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "web scraping",
+    "data extraction",
+    "apify",
+    "youtube transcript",
+    "serp scraper",
+    "e-commerce scraper",
+    "automation"
+  ],
+  "author": "Akash Kumar Naik",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "latest"
+  }
+}

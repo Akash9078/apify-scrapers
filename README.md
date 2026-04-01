@@ -10,7 +10,7 @@ A modern, SEO + AIO + GEO optimized website showcasing 55+ production-ready web 
 
 ## 🌐 Live Demo
 
-**Website:** https://akash9078.github.io/apify-scrapers/
+**Website:** https://scrapers.yesintelligent.com/
 
 **Apify Profile:** https://apify.com/akash9078
 
@@ -209,7 +209,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 - GitHub: [@Akash9078](https://github.com/Akash9078)
 - Apify: [akash9078](https://apify.com/akash9078)
-- Website: [Apify Actors](https://akash9078.github.io/apify-scrapers/)
+- Website: [Apify Actors](https://scrapers.yesintelligent.com/)
 
 ## 🙏 Acknowledgments
 
